@@ -1,6 +1,4 @@
 # Redirect only Netlify auto domain root to /lander
-https://mem-pfp-editor.netlify.app/   /lander   301!
-http://mem-pfp-editor.netlify.app/    /lander   301!
 
 # Then your existing routing rules
 /*    /index.html   200
