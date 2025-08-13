@@ -1,18 +1,10 @@
-# Redirects for ELITE MODE Application - Netlify Deployment
+# Redirect only Netlify auto domain root to /lander
+https://mem-pfp-editor.netlify.app/   /lander   301!
+http://mem-pfp-editor.netlify.app/    /lander   301!
 
-# Handle client-side routing for React Router (subdirectory support)
+# Then your existing routing rules
 /*    /index.html   200
-
-# Ensure all routes serve the main app
 /pfp-editor    /index.html   200
-/404    /index.html   200
-
-# Redirect old paths to new ones
-/bonk-mode    /    301
-/bonk-editor  /pfp-editor    301
-
-# Force HTTPS (optional - uncomment if needed)
-# http://*    https://*    301
-
-# Handle subdirectory deployment (if deploying to /elite-mode/ etc.)
-# /elite-mode/*    /elite-mode/index.html   200
+/404           /index.html   200
+/bonk-mode     /             301
+/bonk-editor   /pfp-editor   301
