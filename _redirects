@@ -10,6 +10,7 @@
 # Redirect old paths to new ones
 /bonk-mode    /    301
 /bonk-editor  /pfp-editor    301
+/   /lander   301
 
 # Force HTTPS (optional - uncomment if needed)
 # http://*    https://*    301
